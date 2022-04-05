@@ -24,9 +24,10 @@ namespace Lanchonetecs {
             Console.WriteLine("5. Hamburger - R$ 25,00");
 
             Console.WriteLine("Qual o seu nome?");
-            Console.WriteLine("Qual o Pedido?");
+            string nomedoCliente = Console.ReadLine();
 
-            int InputProd = int.Parse(Console.ReadLine());
+            Console.WriteLine("Qual o Pedido?");
+            int pedidodoCliente = int.Parse(Console.ReadLine());
 
             //Queue<>
 
