@@ -8,20 +8,20 @@ namespace Lanchonetecs {
 
     internal class Program {
 
-
         struct Pedido {
+
             public int idPed;
             public int idProd;
             public string nomeCliente;
             public string[] menu;
 
             public Pedido(int idPed, int idProd, string nomeCliente) {
+
                 this.idPed = idPed;
                 this.idProd = idProd;
                 this.nomeCliente = nomeCliente;
 
-                // Menu
-
+                // Menu (Cardapio)
                 menu = new string[6];
 
                 menu[1] = "Hamburger";
@@ -46,6 +46,7 @@ namespace Lanchonetecs {
 
             if (resposta != "s") return;
 
+            // Declaração de variáveis
             List<Pedido> Pedidos = new List<Pedido>();
             Queue<string> fila = new Queue<string>();
 
