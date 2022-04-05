@@ -1,0 +1,8 @@
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\bin\Debug\Lanchonetecs.exe.config
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\bin\Debug\Lanchonetecs.exe
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\bin\Debug\Lanchonetecs.pdb
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\obj\Debug\Lanchonetecs.csproj.AssemblyReference.cache
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\obj\Debug\Lanchonetecs.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\obj\Debug\Lanchonetecs.csproj.CoreCompileInputs.cache
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\obj\Debug\Lanchonetecs.exe
+C:\Users\Julio\source\repos\Lanchonetecs\Lanchonetecs\Lanchonetecs\obj\Debug\Lanchonetecs.pdb
