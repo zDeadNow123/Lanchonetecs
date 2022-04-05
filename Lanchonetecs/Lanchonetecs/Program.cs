@@ -70,6 +70,7 @@ namespace Lanchonetecs {
 
                 Pedidos.Add(new Pedido(JRandom.Range(1, 3000),pedidodoCliente, nomedoCliente));
 
+                // Adiciona os pedidos a fila
                 for (int i = 0; i < Pedidos.ToArray().Length; i++) { 
                 
                     fila.Enqueue(Pedidos[i].writeData());
@@ -77,7 +78,9 @@ namespace Lanchonetecs {
 
                 Console.WriteLine("\nPedidos na fila: ");
 
+                // Lista os pedidos dentro da fila
                 foreach (Pedido pedido in Pedidos) {
+
                     Console.WriteLine(pedido.writeData());
                 }
 
