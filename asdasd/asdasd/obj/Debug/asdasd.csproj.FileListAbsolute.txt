@@ -1,0 +1,10 @@
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\bin\Debug\asdasd.exe.config
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\bin\Debug\asdasd.exe
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\bin\Debug\asdasd.pdb
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.csproj.AssemblyReference.cache
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.csproj.CoreCompileInputs.cache
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.exe
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.pdb
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Julio\source\repos\Lanchonetecs\asdasd\asdasd\obj\Debug\asdasd.csproj.CopyComplete
