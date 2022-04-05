@@ -50,8 +50,6 @@ namespace Lanchonetecs {
             List<Pedido> Pedidos = new List<Pedido>();
             Queue<string> fila = new Queue<string>();
 
-            string nomedoCliente;
-
             while (true) {
 
                 Console.Clear();
@@ -63,7 +61,7 @@ namespace Lanchonetecs {
                 Console.WriteLine("5. Pastel - R$ 25,00");
 
                 Console.WriteLine("\nQual o seu nome?");
-                nomedoCliente = Console.ReadLine();
+                string nomedoCliente = Console.ReadLine();
 
                 Console.WriteLine("\nQual o Produto?");
                 int pedidodoCliente = int.Parse(Console.ReadLine());
