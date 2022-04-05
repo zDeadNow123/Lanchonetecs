@@ -10,11 +10,13 @@ namespace Lanchonetecs {
 
 
         struct Pedido {
+            public int idPed;
             public int idProd;
             public string nomeCliente;
             public string[] menu;
 
-            public Pedido(int idProd, string nomeCliente) {
+            public Pedido(int idPed, int idProd, string nomeCliente) {
+                this.idPed = idPed;
                 this.idProd = idProd;
                 this.nomeCliente = nomeCliente;
 
@@ -30,7 +32,8 @@ namespace Lanchonetecs {
             }
 
             public string writeData() {
-                return $"ID: {idProd}, Item: {menu[idProd]}, Cliente: {nomeCliente}"; 
+
+                return $"ID: {idPed}, Item: {menu[idProd]}, Cliente: {nomeCliente}"; 
             }
         }
 
@@ -64,13 +67,12 @@ namespace Lanchonetecs {
                 Console.WriteLine("\nQual o Produto?");
                 int pedidodoCliente = int.Parse(Console.ReadLine());
 
-                Pedidos.Add(new Pedido(pedidodoCliente, nomedoCliente));
+                Pedidos.Add(new Pedido(JRandom.Range(1, 3000),pedidodoCliente, nomedoCliente));
 
                 for (int i = 0; i < Pedidos.ToArray().Length; i++) { 
                 
                     fila.Enqueue(Pedidos[i].writeData());
                 }
-                
 
                 Console.WriteLine("\nPedidos na fila: ");
 
@@ -89,6 +91,8 @@ namespace Lanchonetecs {
 
                 Console.Clear();
             }
+
         }
+
     }
 }
