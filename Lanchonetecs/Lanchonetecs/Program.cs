@@ -8,39 +8,62 @@ namespace Lanchonetecs {
 
     internal class Program {
 
+       static List<Produto> Produtos = new List<Produto>();
+
         struct Pedido {
 
             public int idPed;
-            public int idProd;
-            public string nomeCliente;
-            public string[] menu;
+            public Produto produto;
+            public string nomeCli;
 
-            public Pedido(int idPed, int idProd, string nomeCliente) {
+            public Pedido(int idPed, Produto produto, string nomeCli) {
+
 
                 this.idPed = idPed;
-                this.idProd = idProd;
-                this.nomeCliente = nomeCliente;
-
-                // Menu (Cardapio)
-                menu = new string[6];
-
-                menu[1] = "Hamburger";
-                menu[2] = "X-Salada";
-                menu[3] = "X-Tudo";
-                menu[4] = "Coxinha";
-                menu[5] = "Pastel";
+                this.produto = produto;
+                this.nomeCli = nomeCli;
             }
 
             public string writeData() {
 
-                return $"ID: {idPed}, Item: {menu[idProd]}, Cliente: {nomeCliente}"; 
+                return $"ID: {idPed}, Item: {produto.writeData()}, Cliente: {nomeCli}"; 
             }
+
+        }
+
+        struct Produto {
+
+            public int idProd;
+            public string nameProd;
+
+            public Produto(int idProd, string nameProd) {
+
+                this.nameProd = nameProd;
+                this.idProd = idProd;
+
+            }
+
+            public string writeData() {
+                return this.nameProd;
+            }
+            
         }
 
         static void Main(string[] args) {
 
-            Program program = new Program();
+            Program p = new Program();
 
+            Produtos.Add(new Produto(1, "Hamburger"));
+            Produtos.Add(new Produto(2, "X-Salada"));
+            Produtos.Add(new Produto(3, "X-Tudo"));
+            Produtos.Add(new Produto(4, "Coxinha"));
+            Produtos.Add(new Produto(5, "Pastel"));
+
+            p.Lanchonete();
+        }
+
+        public void Lanchonete() {
+            // Tela Inicial
             Console.WriteLine("Olá, bem vindo a minha humilde lanchonete, você quer 1 lanche? (s/n)");
             string resposta = Console.ReadLine().ToLower();
 
@@ -66,11 +89,11 @@ namespace Lanchonetecs {
                 Console.WriteLine("\nQual o Produto?");
                 int pedidodoCliente = int.Parse(Console.ReadLine());
 
-                Pedidos.Add(new Pedido(JRandom.Range(1, 3000),pedidodoCliente, nomedoCliente));
+                Pedidos.Add(new Pedido(JRandom.Range(1, 9000), Produtos[pedidodoCliente - 1], nomedoCliente));
 
                 // Adiciona os pedidos a fila
-                for (int i = 0; i < Pedidos.ToArray().Length; i++) { 
-                
+                for (int i = 0; i < Pedidos.ToArray().Length; i++) {
+
                     fila.Enqueue(Pedidos[i].writeData());
                 }
 
@@ -82,8 +105,8 @@ namespace Lanchonetecs {
                     Console.WriteLine(pedido.writeData());
                 }
 
-                while (true) { 
-                
+                while (true) {
+
                     Console.WriteLine("\nPronto, aqui está o seu pedido! Gostaria de pedir mais alguma coisa? (s/n)");
                     string resposta2 = Console.ReadLine().ToLower();
 
