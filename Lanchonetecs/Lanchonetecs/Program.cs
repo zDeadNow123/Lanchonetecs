@@ -8,16 +8,18 @@ namespace Lanchonetecs {
 
     internal class Program {
 
-       static List<Produto> Produtos = new List<Produto>();
+        static List<Produto> Produtos = new List<Produto>(); // Então professor, é que....
 
+        // Estrutura
         struct Pedido {
 
             public int idPed;
             public Produto produto;
             public string nomeCli;
 
-            public Pedido(int idPed, Produto produto, string nomeCli) {
 
+            // Construtor
+            public Pedido(int idPed, Produto produto, string nomeCli) {
 
                 this.idPed = idPed;
                 this.produto = produto;
@@ -31,11 +33,13 @@ namespace Lanchonetecs {
 
         }
 
+        // Estrutura
         struct Produto {
 
             public int idProd;
             public string nameProd;
 
+            // Construtor
             public Produto(int idProd, string nameProd) {
 
                 this.nameProd = nameProd;
