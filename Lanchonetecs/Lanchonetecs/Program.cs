@@ -8,7 +8,6 @@ namespace Lanchonetecs {
 
     internal class Program {
 
-        static List<Produto> Produtos = new List<Produto>(); // Então professor, é que....
 
         // Estrutura
         struct Pedido {
@@ -57,16 +56,19 @@ namespace Lanchonetecs {
 
             Program p = new Program();
 
+            p.Lanchonete();
+        }
+
+        public void Lanchonete() {
+
+            List<Produto> Produtos = new List<Produto>();
+
             Produtos.Add(new Produto(1, "Hamburger"));
             Produtos.Add(new Produto(2, "X-Salada"));
             Produtos.Add(new Produto(3, "X-Tudo"));
             Produtos.Add(new Produto(4, "Coxinha"));
             Produtos.Add(new Produto(5, "Pastel"));
 
-            p.Lanchonete();
-        }
-
-        public void Lanchonete() {
             // Tela Inicial
             Console.WriteLine("Olá, bem vindo a minha humilde lanchonete, você quer 1 lanche? (s/n)");
             string resposta = Console.ReadLine().ToLower();
