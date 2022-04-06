@@ -8,14 +8,12 @@ namespace Lanchonetecs {
 
     internal class Program {
 
-
         // Estrutura
         struct Pedido {
 
             public int idPed;
             public Produto produto;
             public string nomeCli;
-
 
             // Construtor
             public Pedido(int idPed, Produto produto, string nomeCli) {
